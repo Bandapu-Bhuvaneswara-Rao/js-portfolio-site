@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "description": "Bandapu Bhuvaneswara Rao - JavaScript Portfolio Site",
   "source": "src/index.html",
-  "homepage": "https://bhuvaneswarbandapu.github.io/js-portfolio-site",
+  "homepage": "https://Bandapu-Bhuvaneswara-Rao.github.io/js-portfolio-site",
   "scripts": {
     "start": "parcel src/index.html --port 1234",
     "build": "parcel build src/index.html",
-    "build-gh": "parcel build src/index.html --public-url 'https://bhuvaneswarbandapu.github.io/js-portfolio-site'",
+    "build-gh": "parcel build src/index.html --public-url 'https://Bandapu-Bhuvaneswara-Rao.github.io/js-portfolio-site/'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bhuvaneswarbandapu/js-portfolio-site.git"
+    "url": "https://github.com/Bandapu-Bhuvaneswara-Rao/js-portfolio-site.git"
   },
   "author": "Bandapu Bhuvaneswara Rao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bhuvaneswarbandapu/js-portfolio-site/issues"
+    "url": "https://github.com/Bandapu-Bhuvaneswara-Rao/js-portfolio-site/issues"
   },
   "dependencies": {
     "react": "^18.2.0",

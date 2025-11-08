@@ -1,8 +1,4 @@
-/**
-* CSS file to hold styles that apply across the application
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Montserrat:wght@300;500;700&display=swap");
 
 html,
 body {
@@ -12,6 +8,8 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -23,103 +21,67 @@ div#main {
 section {
   position: relative;
   width: 100vw;
+  padding: 4rem 10%;
+  border-bottom: 3px solid #e0e0e0;
 }
 
-section.min-height {
-  min-height: 100vh;
+section:nth-child(odd) {
+  background-color: #ffffff;
 }
 
-section.padding {
-  padding: 5rem 0;
-}
-
-section img.background {
-  height: 100%;
-  left: 50%;
-  object-fit: cover;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, 0);
-  width: 100vmax;
-  z-index: -1;
+section:nth-child(even) {
+  background-color: #f0f4f8;
 }
 
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
-  font-weight: 400;
-  line-height: 0.8;
+  font-size: 4.5rem;
+  font-weight: 500;
   margin: 0;
+  color: #1e1e2f;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 400;
-  margin: 0;
-  padding-top: 1rem;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin: 0;
+  margin-top: 1rem;
+  color: #444;
 }
 
 p {
   font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-p.large {
-  font-size: 24px;
-}
-
-p.small {
-  font-size: 15px;
-}
-
-hr {
-  margin: 2.5rem;
-}
-
-li {
   line-height: 1.7;
+  margin-top: 1rem;
+  color: #333;
 }
 
-li::marker {
-  color: #4e567e;
+.about-section {
+  border-left: 5px solid #4e567e;
+  background-color: #e6f4f1;
+  padding: 3rem 5%;
+  border-radius: 12px;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.home-section {
+  border-bottom: 5px solid #4e567e;
 }
 
 a {
-  color: black;
+  color: #4e567e;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-  color: #4e567e;
+  color: #1e1e2f;
 }
 
-.container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 330px 300px;
-  margin: 20px auto;
-}
-
-.container .box {
-  border-radius: 10px;
-  border: 1px solid rgb(204, 204, 204);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 16px;
+footer {
   text-align: center;
-}
-
-img.socialIcon {
-  height: 30px;
-  width: 30px;
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #fff;
+  border-top: 4px solid #e6f4f1;
 }

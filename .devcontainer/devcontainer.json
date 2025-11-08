@@ -1,8 +1,6 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/devcontainers/images/tree/main/src/javascript-node
 {
   "name": "JavaScript Portfolio Site with GitHub Codespaces",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "hostRequirements": {
     "cpus": 4
   },
@@ -13,11 +11,8 @@
     "server": "npm start"
   },
 
-  // Configure tool-specific properties.
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
@@ -36,15 +31,18 @@
 
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/azure-cli:1": {}
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
   },
 
   "portsAttributes": {
-    "1234": {
+    "3000": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
   },
 
-  "forwardPorts": [1234]
+  "forwardPorts": [3000]
 }

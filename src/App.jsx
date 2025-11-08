@@ -15,28 +15,22 @@ import Portfolio from "./Components/Portfolio";
 import "./styles.css";
 
 /**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed a properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
+ * Update your personal info here
  */
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
+  name: "Bandapu Bhuvaneswara Rao",
+  title: "Aspiring Backend Engineer | MERN Stack Developer",
+  email: "bhuvaneswarab@example.com",
+  gitHub: "Bandapu-Bhuvaneswara-Rao",
+  instagram: "",
+  linkedIn: "bandapu-bhuvaneswara-rao",
   medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  twitter: "",
+  youTube: "",
 };
 
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
+const primaryColor = "#1E1E2F"; // dark blue background shade
+const secondaryColor = "#E6F4F1"; // soft teal section shade
 
 const App = () => {
   return (

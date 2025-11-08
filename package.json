@@ -1,24 +1,24 @@
 {
-  "name": "educator-js-codespace-template",
+  "name": "js-portfolio-site",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "Bandapu Bhuvaneswara Rao - JavaScript Portfolio Site",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "https://bhuvaneswarbandapu.github.io/js-portfolio-site",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+    "start": "parcel src/index.html --port 1234",
+    "build": "parcel build src/index.html",
+    "build-gh": "parcel build src/index.html --public-url 'https://bhuvaneswarbandapu.github.io/js-portfolio-site'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "https://github.com/bhuvaneswarbandapu/js-portfolio-site.git"
   },
-  "author": "Microsoft",
+  "author": "Bandapu Bhuvaneswara Rao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/bhuvaneswarbandapu/js-portfolio-site/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
